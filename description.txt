@@ -1,0 +1,5 @@
+dds_pass:
+	Lê a parte do dia da data em formato condensado e a barra que se segue. (ie: "01/", "1/", "29/")
+
+saaaa:
+	Lê uma barra seguida do ano em formato condensado. (ie: "/2004", "/2018")

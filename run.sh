@@ -12,10 +12,6 @@ function concat() {
 	fstconcat "$1.fst" "$2.fst" | fstrmepsilon | fstarcsort > "$3.fst"
 }
 
-function rmepsilon() {
-	fstrmepsilon "$1.fst" "$1.fst"
-}
-
 # A
 
 compile mmm2mm
@@ -75,3 +71,29 @@ draw misto2texto
 fstunion misto2texto.fst numerico2texto.fst data2texto.fst
 
 draw data2texto
+
+# E
+
+## 83557
+
+compile 83557_numerico
+draw 83557_numerico
+compile 83557_misto
+draw 83557_misto
+compile 83557_pt
+draw 83557_pt
+
+fstcompose 83557_misto.fst misto2numerico.fst 83557_misto2numerico.fst
+draw 83557_misto2numerico
+
+fstcompose 83557_pt.fst pt2en.fst 83557_pt2en.fst
+draw 83557_pt2en
+
+fstcompose 83557_numerico.fst numerico2texto.fst 83557_numerico2texto.fst
+draw 83557_numerico2texto
+
+fstcompose 83557_misto.fst misto2texto.fst 83557_misto2texto.fst
+draw 83557_misto2texto
+
+fstcompose 83557_misto.fst data2texto.fst 83557_data2texto.fst
+draw 83557_data2texto

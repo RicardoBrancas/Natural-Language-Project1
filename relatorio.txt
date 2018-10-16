@@ -1,0 +1,8 @@
+Neste trabalho, ao nível da construção dos vários transdutores, foram utilizados alguns critérios específicos para garantir coerência das datas. Por exemplo, para a construção do transdutor numerico2texto.fst, foi necessário criar transições e estados de modo a que que datas como 39/SET/2014 não fossem aceites. 
+Foram criados transdutores auxiliares, sendo que para cada alínea do enunciado o transdutor pedido foi separado em vários auxiliares de forma a tratar cada problema em separado, por exemplo, o transdutor dia.fst trata da transformação de caracteres no formato numérico para o formato por extenso.
+Tanto o não determinismo, como as operações de transformação, foram aproveitados ao máximo para construir os transdutores pedidos. A operação de concatenação foi utilizada nos casos onde era necessário juntar os transdutores auxiliares referidos acima para o resultado final. Para além desta operação, foi ainda utilizada a operação de inversão de forma a transformar o transdutor que que realiza a tradução da data de português para inglês para a operação inversa e a operação de união para transdutor data2texto.fst. Por último foi utilizada a função de composição tanto para teste dos inputs pedidos como para construção do transdutor  misto2texto.fst.
+Para a geração dos testes, foi utilizado o script word2fst.py fornecido pelos docentes.
+
+Duarte Teles, 83450
+Ricardo Brancas, 83557
+ 

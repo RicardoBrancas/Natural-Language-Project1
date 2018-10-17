@@ -97,3 +97,27 @@ draw 83557_misto2texto
 
 fstcompose 83557_misto.fst data2texto.fst 83557_data2texto.fst
 draw 83557_data2texto
+
+## 83450
+
+compile 83450_numerico
+draw 83450_numerico
+compile 83450_misto
+draw 83450_misto
+compile 83450_pt
+draw 83450_pt
+
+fstcompose 83450_misto.fst misto2numerico.fst 83450_misto2numerico.fst
+draw 83450_misto2numerico
+
+fstcompose 83450_pt.fst pt2en.fst 83450_pt2en.fst
+draw 83450_pt2en
+
+fstcompose 83450_numerico.fst numerico2texto.fst 83450_numerico2texto.fst
+draw 83450_numerico2texto
+
+fstcompose 83450_misto.fst misto2texto.fst 83450_misto2texto.fst
+draw 83450_misto2texto
+
+fstcompose 83450_misto.fst data2texto.fst 83450_data2texto.fst
+draw 83450_data2texto
